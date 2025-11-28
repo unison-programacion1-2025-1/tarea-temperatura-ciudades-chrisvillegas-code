@@ -23,7 +23,7 @@ df_celsius=df.copy()
 
 # TODO: Convertir las temperaturas de cada ciudad de Kelvin a Celsius usando la funcion creada
 for ciudad in df_celsius.columns:
-    df_celsius[ciudad]=kelvin_to_celsius(df_celsius[ciudad])
+    df_celsius[ciudad]=df_celsius[ciudad].apply(kelvin_to_celcius)
 # Analisis
 
 # TODO: Imprime que día y hora se registró la temperatura mínima en Phoenix con el siguiente mensaje: "El día con la temperatura mínima en Phoenix fue: {fecha}"
